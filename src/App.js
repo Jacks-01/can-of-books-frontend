@@ -5,8 +5,8 @@ import './App.css';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import BestBooks from './components/BestBooks.js';
-// import { Routes, Route } from 'react-router-dom';
-// import About from './components/About.js';
+import { Routes, Route } from 'react-router-dom';
+import About from './components/About.js';
 
 
 
@@ -23,14 +23,14 @@ class App extends React.Component {
       <>
         {/* <Router> */}
           <Header />
-          {/* <Routes>
-            <Route path="*" element={<Header />}>
+          <Routes>
+            <Route path="/" element={<Header />}>
               <Route index element={<App />} />
               <Route path="about" element={<About />} />
             </Route>
-          </Routes> */}
-          <a href='/'>Home</a>
-          <a href='/about'>About</a>
+          </Routes>
+          {/* <a href='/'>Home</a>
+          <a href='/about'>About</a> */}
           <BestBooks />
           <Footer />
         {/* </Router> */}

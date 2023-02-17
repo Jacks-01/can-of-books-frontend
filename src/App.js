@@ -2,7 +2,7 @@
 import React from 'react';
 // import axios from "axios";
 import './App.css';
-// import Header from './components/Header.js';
+import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import BestBooks from './components/BestBooks.js';
 // import { Routes, Route } from 'react-router-dom';
@@ -22,7 +22,7 @@ class App extends React.Component {
     return (
       <>
         {/* <Router> */}
-          {/* <Header /> */}
+          <Header />
           {/* <Routes>
             <Route path="*" element={<Header />}>
               <Route index element={<App />} />
